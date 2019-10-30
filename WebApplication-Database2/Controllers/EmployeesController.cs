@@ -85,7 +85,7 @@ namespace WebApplication_Database2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,Department")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,Department,Email,Phoneno")] Employee employee)
         {
             if (id != employee.Id)
             {
